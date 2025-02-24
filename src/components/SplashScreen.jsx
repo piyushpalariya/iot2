@@ -5,7 +5,7 @@ export default function SplashScreen() {
   return (
     <View testID="splashscreen" style={styles.view}>
       <Image source={require("./ic_launcher.png")} style={styles.logo} />
-      <ActivityIndicator testID="loading"/>
+      <ActivityIndicator testID="loading" />
     </View>
   )
 }

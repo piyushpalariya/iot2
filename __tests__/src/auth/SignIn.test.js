@@ -1,11 +1,11 @@
 import SignIn from "../../../src/auth/SignIn"
-import {render,screen,userEvent} from "@testing-library/react-native"
+import {render, screen, userEvent} from "@testing-library/react-native"
 import React from "react"
 import {Provider} from "react-redux"
 import store from "../../../src/redux/store"
 import {NavigationContainer} from "@react-navigation/native"
 
-const user=userEvent.setup()
+const user = userEvent.setup()
 
 describe("SignIn", () => {
   it("snapshot", () => {
@@ -64,5 +64,4 @@ describe("SignIn", () => {
     const SignInButton = screen.getByTestId("login button")
     user.press(SignInButton)
   })
-
 })

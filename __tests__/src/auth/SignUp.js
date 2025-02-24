@@ -1,10 +1,5 @@
 import SignUp from "../../../src/auth/SignUp"
-import {
-  render,
-  fireEvent,
-  userEvent,
-  screen,
-} from "@testing-library/react-native"
+import {render, userEvent, screen} from "@testing-library/react-native"
 import React from "react"
 import {NavigationContainer} from "@react-navigation/native"
 

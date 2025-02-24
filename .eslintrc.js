@@ -15,7 +15,7 @@ module.exports = {
   ],
   rules: {
     "react-native/no-unused-styles": 2, // Error if unused styles
-    "no-console": 1, // Warning for console.log
+    //"no-console": 1, // Warning for console.log
   },
   overrides: [
     {

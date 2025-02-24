@@ -10,7 +10,6 @@ import {useSelector} from "react-redux"
 import {addEventListener} from "@react-native-community/netinfo"
 import translate from "../locale/languages"
 
-
 addEventListener(state => {
   const isConnected = state.isConnected
   const NetworkType = state.type

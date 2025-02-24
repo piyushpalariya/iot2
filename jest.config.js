@@ -10,7 +10,7 @@ const config = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
   //setupFilesAfterEnv: ['./jest.setup.js'],
   transform: {"^.+\\.(js|jsx|ts|tsx)$": "babel-jest"},
-  transformIgnorePatterns: ['/node_nodules/react-redux'],
+  transformIgnorePatterns: ["/node_nodules/react-redux"],
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "coverage",

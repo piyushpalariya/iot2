@@ -1,4 +1,4 @@
-import {device, element, by} from "detox"
+import {device, element, by, waitFor} from "detox"
 
 describe("Splash Screen", () => {
   beforeAll(async () => {
@@ -38,4 +38,3 @@ describe("Login Screen", () => {
     await waitFor(element(by.id("login button"))).toBeVisible()
   })
 })
-
