@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn snapshot 1`] = `
+<View
+  className="bg-white w-full h-full  justify-center items-center dark:bg-black"
+>
+  <Text
+    testID="page title"
+  >
+    Signin
+  </Text>
+  <TextInput
+    placeholder="email"
+    testID="email"
+  />
+  <TextInput
+    placeholder="password"
+    testID="password"
+  />
+  <View
+    className="bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
+    testID="login button"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        className="text-center"
+      >
+        Login
+      </Text>
+    </View>
+  </View>
+</View>
+`;
