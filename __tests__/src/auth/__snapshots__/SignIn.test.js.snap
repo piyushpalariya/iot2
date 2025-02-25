@@ -2,64 +2,74 @@
 
 exports[`SignIn snapshot 1`] = `
 <View
-  className="bg-white w-full h-full  justify-center items-center dark:bg-black"
+  className="bg-[#f7f5f5] w-full h-full  justify-start items-center dark:bg-[#0a0a0a]"
 >
   <Text
+    className="mt-20 text-2xl"
     testID="page title"
   >
-    Signin
+    LOGIN
   </Text>
-  <TextInput
-    placeholder="email"
-    testID="email"
-  />
-  <TextInput
-    placeholder="password"
-    testID="password"
-  />
   <View
-    className="bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
-    testID="login button"
+    className="bg-[#d1d8de] mt-16 w-[75%] h-[40%] justify-start items-center rounded-[25]"
   >
+    <TextInput
+      className="mt-20"
+      onChangeText={[Function]}
+      placeholder="email"
+      testID="email"
+      value={null}
+    />
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="password"
+      testID="password"
+      value={null}
+    />
     <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        {
-          "opacity": 1,
-        }
-      }
+      className="mt-8 bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
+      testID="login button"
     >
-      <Text
-        className="text-center"
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
       >
-        Login
-      </Text>
+        <Text
+          className="text-center"
+        >
+          Login
+        </Text>
+      </View>
     </View>
   </View>
 </View>

@@ -9,7 +9,7 @@ const config = {
   //preset: '@testing-library/react-native',
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
   //setupFilesAfterEnv: ['./jest.setup.js'],
-  transform: {"^.+\\.(js|jsx|ts|tsx)$": "babel-jest"},
+  transform: { "^.+\\.(js|jsx|ts|tsx)$": "babel-jest" },
   transformIgnorePatterns: ["/node_nodules/react-redux"],
   clearMocks: true,
   collectCoverage: true,
@@ -29,6 +29,6 @@ const config = {
   testMatch: ["**/__tests__/**/**/*.test.js"],
   testPathIgnorePatterns: ["/__tests__/coverage"],
   testLocationInResults: true,
-}
+};
 
-module.exports = config
+module.exports = config;

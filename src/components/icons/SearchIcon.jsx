@@ -1,6 +1,6 @@
-import {View, StyleSheet} from "react-native"
-import React from "react"
-import Svg, {Path} from "react-native-svg"
+import { View, StyleSheet } from "react-native";
+import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 export default function SearchIcon() {
   return (
@@ -19,9 +19,9 @@ export default function SearchIcon() {
         />
       </Svg>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-  icon: {width: 30, height: 30},
-})
+  icon: { width: 30, height: 30 },
+});

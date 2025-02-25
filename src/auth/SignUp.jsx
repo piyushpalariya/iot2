@@ -1,10 +1,10 @@
-import {Text, View, TextInput} from "react-native"
-import React from "react"
-import CustomButton from "../components/CustomButton"
-import {useNavigation} from "@react-navigation/native"
+import { Text, View, TextInput } from "react-native";
+import React from "react";
+import CustomButton from "../components/CustomButton";
+import { useNavigation } from "@react-navigation/native";
 
 export default function SignUp() {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
     <View
       testID="login screen"
@@ -18,9 +18,9 @@ export default function SignUp() {
         testID="signup button"
         title="signup"
         onPress={() => {
-          navigation.navigate("SignIn")
+          navigation.navigate("SignIn");
         }}
       />
     </View>
-  )
+  );
 }

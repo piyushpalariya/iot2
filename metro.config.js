@@ -1,12 +1,12 @@
-const {getDefaultConfig, mergeConfig} = require("@react-native/metro-config")
+const { getDefaultConfig, mergeConfig } = require("@react-native/metro-config");
 const {
   wrapWithReanimatedMetroConfig,
-} = require("react-native-reanimated/metro-config")
+} = require("react-native-reanimated/metro-config");
 
-const {withNativeWind} = require("nativewind/metro")
+const { withNativeWind } = require("nativewind/metro");
 
-const defaultConfig = getDefaultConfig(__dirname)
-const {assetExts, sourceExts} = defaultConfig.resolver
+const defaultConfig = getDefaultConfig(__dirname);
+const { assetExts, sourceExts } = defaultConfig.resolver;
 
 const SvgConfig = {
   transformer: {
@@ -15,13 +15,13 @@ const SvgConfig = {
     ),
   },
   resolver: {
-    assetExts: assetExts.filter(ext => ext !== "svg"),
+    assetExts: assetExts.filter((ext) => ext !== "svg"),
     sourceExts: [...sourceExts, "svg"],
   },
-}
+};
 
-const OldConfig = mergeConfig(defaultConfig, SvgConfig)
+const OldConfig = mergeConfig(defaultConfig, SvgConfig);
 
-const config = wrapWithReanimatedMetroConfig(OldConfig)
+const config = wrapWithReanimatedMetroConfig(OldConfig);
 
-module.exports = withNativeWind(config, {input: "./global.css"})
+module.exports = withNativeWind(config, { input: "./global.css" });

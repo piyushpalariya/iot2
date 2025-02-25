@@ -1,8 +1,8 @@
-import {PermissionsAndroid} from "react-native"
+import { PermissionsAndroid } from "react-native";
 
 export const NotificationsPermission = async () => {
   try {
-    const granted = await PermissionsAndroid.request(
+    await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
       {
         title: "App notifications Permission",
@@ -11,13 +11,13 @@ export const NotificationsPermission = async () => {
         buttonNegative: "Cancel",
         buttonPositive: "OK",
       },
-    )
-    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      console.log("You can use the notifications")
-    } else {
-      console.log("notifications permission denied")
-    }
+    );
+    // if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+    //   console.log("You can use the notifications")
+    // } else {
+    //   console.log("notifications permission denied")
+    // }
   } catch (err) {
-    console.warn(err)
+    console.warn(err);
   }
-}
+};

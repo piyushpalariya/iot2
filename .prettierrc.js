@@ -1,8 +1,12 @@
 module.exports = {
-  arrowParens: "avoid",
   bracketSameLine: true,
-  bracketSpacing: false,
+  bracketSpacing: true,
   trailingComma: "all",
   singleQuote: false,
-  semi: false,
-}
+  semi: true,
+  printWidth: 80, // Maximum line length (adjust as needed)
+  tabWidth: 2,
+  arrowParens: "always",
+  jsxSingleQuote: false,
+  endOfLine: "auto",
+};

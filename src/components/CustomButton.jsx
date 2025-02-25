@@ -1,21 +1,20 @@
-import {Text, TouchableOpacity, View} from "react-native"
-import React from "react"
-import PropTypes from "prop-types"
+import { Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import PropTypes from "prop-types";
 
 CustomButton.propTypes = {
-  // Define prop types
-  title: PropTypes.string.isRequired, // title is a required string
-  testID: PropTypes.string, // testID is an optional string
-  onPress: PropTypes.func.isRequired, // onPress is a required function
-}
-export default function CustomButton({title, testID, onPress}) {
+  title: PropTypes.string.isRequired,
+  testID: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+export default function CustomButton({ title, testID, onPress, className }) {
   return (
-    <View
-      testID={testID}
-      className="bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center">
+    <View testID={testID} className={className}>
       <TouchableOpacity onPress={onPress}>
         <Text className="text-center">{title}</Text>
       </TouchableOpacity>
     </View>
-  )
+  );
 }

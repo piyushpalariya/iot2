@@ -83,4 +83,4 @@ module.exports = {
       app: "android.release",
     },
   },
-}
+};
