@@ -25,6 +25,7 @@ const ValidateLogin = (credentials) => {
   try {
     const result = loginSchema.parse(credentials);
     console.log("Login successful:", result);
+    return true;
   } catch (error) {
     return JSON.parse(error);
   }
@@ -69,9 +70,12 @@ export default function SignIn() {
           className="mt-8 bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
           testID="login button"
           onPress={() => {
-            dispatch(setIsLoggedIn(true));
             const result = ValidateLogin({ email, password });
-            setError(result);
+            if (result === true) {
+              dispatch(setIsLoggedIn(true));
+            } else {
+              setError(result);
+            }
           }}
           title="Login"
         />
@@ -79,6 +83,7 @@ export default function SignIn() {
 
       {BiometricsEnabled && (
         <CustomButton
+          className="mt-10  bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
           testID="login with Biometrics"
           onPress={LoginWithBiometrics}
           title="Login with Biometrics"

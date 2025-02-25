@@ -27,7 +27,6 @@ exports[`SignIn snapshot 1`] = `
       value={null}
     />
     <View
-      className="mt-8 bg-yellow-500 rounded-[25] m-1 p-3  items-center justify-center"
       testID="login button"
     >
       <View

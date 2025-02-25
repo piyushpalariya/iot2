@@ -6,12 +6,11 @@ CustomButton.propTypes = {
   title: PropTypes.string.isRequired,
   testID: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  className: PropTypes.string,
 };
 
-export default function CustomButton({ title, testID, onPress, className }) {
+export default function CustomButton({ title, testID, onPress }) {
   return (
-    <View testID={testID} className={className}>
+    <View testID={testID}>
       <TouchableOpacity onPress={onPress}>
         <Text className="text-center">{title}</Text>
       </TouchableOpacity>
