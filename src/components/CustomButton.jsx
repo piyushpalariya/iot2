@@ -6,10 +6,10 @@ CustomButton.propTypes = {
   title: PropTypes.string.isRequired,
   testID: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  className:PropTypes.string,
+  className: PropTypes.string,
 };
 
-export default function CustomButton({ title, testID, onPress,className }) {
+export default function CustomButton({ title, testID, onPress, className }) {
   return (
     <View testID={testID} className={className}>
       <TouchableOpacity onPress={onPress}>
